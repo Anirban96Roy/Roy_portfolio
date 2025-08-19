@@ -16,10 +16,10 @@ const Footer = () => {
         <div className="flex flex-col items-start">
           <h3 className="text-2x1  font-bold mb-2">Quick Links</h3>
           <ul className="space-y-1 text-sm">
-            <li><a href="#about" className="hover:text-blue-500 transition">About</a></li>
-            <li><a href="#skills" className="hover:text-blue-500 transition">Skills</a></li>
-            <li><a href="#projects" className="hover:text-blue-500 transition">Projects</a></li>
-            <li><a href="#contact" className="hover:text-blue-500 transition">Contact</a></li>
+            <li><a href="#about" className="font-bold hover:text-[#EBFFD1] transition">About</a></li>
+            <li><a href="#skills" className="font-bold hover:text-[#EBFFD1] transition">Skills</a></li>
+            <li><a href="#projects" className="font-bold hover:text-[#EBFFD1] transition">Projects</a></li>
+            <li><a href="#contact" className="font-bold hover:text-[#EBFFD1]transition">Contact</a></li>
           </ul>
         </div>
 
@@ -27,13 +27,11 @@ const Footer = () => {
         <div className="flex flex-col items-start">
           <h3 className="text-lg font-semibold mb-2">Connect with Me</h3>
           <div className="flex space-x-4">
-            <a href="royaniban347@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-              <Mail />
-            </a>
-            <a href="https://github.com/Anirban96Roy/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          
+            <a href="https://github.com/Anirban96Roy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#EBFFD1]">
               <Github />
             </a>
-            <a href="https://www.linkedin.com/in/anirban-roy007/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+            <a href="https://www.linkedin.com/in/anirban-roy007/" target="_blank" rel="noopener noreferrer" className="hover:text-[#EBFFD1]">
               <Linkedin />
             </a>
           </div>

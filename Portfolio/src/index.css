@@ -1,0 +1,9 @@
+:root {
+  /* Prevent automatic dark mode color inversion */
+color-scheme: only light;
+}
+
+html, body, #root {
+    background-color: #ffffff !important;
+    color: #111827 !important; /* your default text color */
+}

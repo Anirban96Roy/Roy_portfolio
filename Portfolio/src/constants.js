@@ -67,6 +67,8 @@ import c from './assets/anirban_project/c.jpg'
 
 
 
+
+
 export const SkillsInfo = [
   {
     title: 'Frontend',

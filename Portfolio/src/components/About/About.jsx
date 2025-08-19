@@ -3,7 +3,7 @@ import profileImage from '../../assets/anirban_project/a.jpg'; // Update the fil
 
 const About = () => {
   return (
-    <section id="about" className="w-full scroll-mt-29 bg-[#A3DC9A] py-16 px-4 md:px-12 border-t">
+    <section id="about" className="w-full scroll-mt-29 bg-[#A3DC9A] py-16 px-4 md:px-12 ">
       <div className="max-w-6xl mx-auto border-2 border-gray-200 rounded-2xl shadow-lg overflow-hidden">
         <div className="flex flex-col md:flex-row h-full">
 

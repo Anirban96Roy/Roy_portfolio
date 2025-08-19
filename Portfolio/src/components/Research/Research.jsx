@@ -3,25 +3,19 @@ import React from 'react'
 const papers = [
   {
     title: 'WaveGuard: A Flood Monitoring and Rescue System',
-    authors: 'Your Name, Co-author',
-    publication: 'IEEE Xplore, 2025',
-    description: 'An AI-powered system for real-time flood rescue coordination, using NLP and geospatial analytics.',
-    bgColor: 'bg-[#E9F8F9]',
-  },
+  authors: 'Anirban Roy, Arittra Naha , Shahidul Salim Sakib, Sk. Imran Hossain',
+  publication: 'SoftwareX (Peer-Reviewed), In Process',
+  description: 'An AI-powered system for real-time flood rescue coordination, using NLP and geospatial analytics.',
+  bgColor: 'bg-[#E9F8F9]',
+},
   {
     title: 'Preterm Birth Prediction Using ML and Explainable AI',
-    authors: 'Your Name, Co-author',
-    publication: 'Elsevier, 2024',
-    description: 'A machine learning-based solution to identify risk of preterm birth using XAI for interpretability.',
-    bgColor: 'bg-[#FFF3E2]',
+  authors: 'Md. Tahsinur Rahman, Anirban Ghosh, Anirban Roy',
+  publication: 'Expected Conference Publication, KUET EICT, 2025',
+  description: 'A machine learning-based solution to identify the risk of preterm birth using XAI for interpretability.',
+  bgColor: 'bg-[#FFF3E2]',
   },
-  {
-    title: 'Gun Detection System Using Deep Learning',
-    authors: 'Your Name, Co-author',
-    publication: 'Springer, 2023',
-    description: 'This paper presents a CNN-based gun detection framework for public safety surveillance systems.',
-    bgColor: 'bg-[#FDE2F3]',
-  },
+  
   {
     title: 'Smart Agriculture Assistant with Chatbot and Disease Prediction',
     authors: 'Your Name, Co-author',
@@ -33,7 +27,7 @@ const papers = [
 
 const Research = () => {
   return (
-    <section id="research" className="py-16 scroll-mt-29 px-4 sm:px-8 lg:px-16 border-t">
+    <section id="research" className="py-16 scroll-mt-29 px-4 sm:px-8 lg:px-16 ">
       <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Research & Publications</h2>
 
       <div className="space-y-10">

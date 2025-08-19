@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative border-b border-gray-600"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative "
     >
       {/* Section Title */}
       <div className="text-center mb-16">
