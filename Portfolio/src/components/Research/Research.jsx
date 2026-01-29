@@ -23,6 +23,7 @@ const papers = [
   publication: "Work in progress",
   description:
     "A medical document understanding pipeline for handwritten and printed prescriptions, combining ROI detection and structured information extraction to preserve and organize patient medication records.",
+     bgColor: 'bg-[#E9F8F9]',
 }
 ,
 ]
