@@ -8,21 +8,23 @@ const papers = [
   description: 'An AI-powered system for real-time flood rescue coordination, using NLP and geospatial analytics.',
   bgColor: 'bg-[#E9F8F9]',
 },
-  {
-    title: 'Preterm Birth Prediction Using ML and Explainable AI',
-  authors: 'Md. Tahsinur Rahman, Anirban Ghosh, Anirban Roy',
-  publication: 'Expected Conference Publication, KUET EICT, 2025',
-  description: 'A machine learning-based solution to identify the risk of preterm birth using XAI for interpretability.',
-  bgColor: 'bg-[#FFF3E2]',
-  },
+ {
+  title: "A Quantitatively Validated Explainable AI Framework for Maternal Health Risk Prediction in Rural Bangladesh",
+  authors: "Md. Tahsinur Rahman, Anirban Ghosh, Anirban Roy",
+  publication: "Manuscript in preparation (2025)",
+  description:
+    "An explainable machine learning framework for maternal health risk prediction with quantitative XAI validation (e.g., faithfulness and stability). Work in progress.",
+  bgColor: "bg-[#FFF3E2]",
+}
+,
   
-  {
-    title: 'Smart Agriculture Assistant with Chatbot and Disease Prediction',
-    authors: 'Your Name, Co-author',
-    publication: 'ACM, 2024',
-    description: 'Combining crop disease prediction and a Bangla-speaking chatbot to assist local farmers.',
-    bgColor: 'bg-[#E4F1FF]',
-  },
+ {
+  title: "An Intelligent Framework for Medical Prescription Information Preservation",
+  publication: "Work in progress",
+  description:
+    "A medical document understanding pipeline for handwritten and printed prescriptions, combining ROI detection and structured information extraction to preserve and organize patient medication records.",
+}
+,
 ]
 
 const Research = () => {
