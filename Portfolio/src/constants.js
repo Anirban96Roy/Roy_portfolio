@@ -208,7 +208,7 @@ export const SkillsInfo = [
       img: kuet,
       school: "Khulna University of Engineering & Technology - KUET",
       date: "2026",
-      grade: "CGPA 3.59",
+      grade: "CGPA 3.50",
       desc: "I am currently pursuing my undergraduate studies in Computer Science and Engineering at KUET, where I have developed strong technical skills across areas like programming, machine learning, and web development. I was honored as the Runner-up in the IEEE 3MT Thesis Competition at CUET, and have actively engaged in research, technical events, and collaborative projects that have broadened both my academic and practical expertise.",
       degree: "Bachelor of Science in Computer Science and Engineering",
     },
