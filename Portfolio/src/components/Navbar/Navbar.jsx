@@ -1,116 +1,646 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // Detect scroll and change navbar background
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Smooth scroll to section
-  const handleMenuItemClick = (sectionId) => {
-    setActiveSection(sectionId);
-    setIsOpen(false);
-
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  // Menu items (remove duplicates)
-  const menuItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "awards", label: "Awards" },
-    { id: "education", label: "Education" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "research", label: "Research" },
-    { id: "contact", label: "Contact" },
-  ];
-
-  return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-        isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
-    >
-      <div className="text-white py-5 flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
-          <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Anirban</span>
-          <span className="text-[#8245ec]">/</span>
-          <span className="text-white">Roy</span>
-          <span className="text-[#8245ec]">&gt;</span>
-        </div>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-[#FFF1D5] text-base md:text-lg font-normal">
-
-          {menuItems.map((item) => (
-            <li
-              key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
-                activeSection === item.id ? "text-[#8245ec]" : ""
-              }`}
-            >
-              <button onClick={() => handleMenuItemClick(item.id)}>
-                {item.label}
-              </button>
-            </li>
-          ))}
-        </ul>
 
 
-        {/* Mobile Menu Icon */}
-        <div className="md:hidden">
-          {isOpen ? (
-            <FiX
-              className="text-3xl text-[#8245ec] cursor-pointer"
-              onClick={() => setIsOpen(false)}
-            />
-          ) : (
-            <FiMenu
-              className="text-3xl text-[#8245ec] cursor-pointer"
-              onClick={() => setIsOpen(true)}
-            />
-          )}
-        </div>
-      </div>
+const [isOpen,setIsOpen] = useState(false);
 
-      {/* Mobile Menu Items */}
-      {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-[#FFF1D5]">
-            {menuItems.map((item) => (
-              <li
-                key={item.id}
-                className={`cursor-pointer hover:text-white ${
-                  activeSection === item.id ? "text-[#8245ec]" : ""
-                }`}
-              >
-                <button onClick={() => handleMenuItemClick(item.id)}>
-                  {item.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </nav>
-  );
+const [isScrolled,setIsScrolled] = useState(false);
+
+
+
+
+
+useEffect(()=>{
+
+
+const handleScroll=()=>{
+
+setIsScrolled(window.scrollY > 40);
+
 };
+
+
+window.addEventListener(
+"scroll",
+handleScroll
+);
+
+
+
+return()=>{
+
+window.removeEventListener(
+"scroll",
+handleScroll
+);
+
+};
+
+
+},[]);
+
+
+
+
+
+
+const menuItems=[
+
+
+{
+path:"/",
+label:"Home"
+},
+
+
+{
+path:"/about",
+label:"About"
+},
+
+
+{
+path:"/research",
+label:"Research"
+},
+
+
+{
+path:"/projects",
+label:"Projects"
+},
+
+
+{
+path:"/skills",
+label:"Skills"
+},
+
+
+{
+path:"/education",
+label:"Education"
+},
+
+
+{
+path:"/awards",
+label:"Awards"
+},
+
+
+{
+path:"/contact",
+label:"Contact"
+}
+
+
+
+];
+
+
+
+
+
+
+
+const handleNavigation=()=>{
+
+
+setIsOpen(false);
+
+
+window.scrollTo({
+
+top:0,
+
+left:0,
+
+behavior:"smooth"
+
+});
+
+
+};
+
+
+
+
+
+
+
+return(
+
+
+
+<nav
+
+
+className={`
+
+fixed
+
+top-0
+
+left-0
+
+w-full
+
+z-50
+
+transition-all
+
+duration-300
+
+
+${
+
+isScrolled
+
+?
+
+"bg-[#020617]/95 backdrop-blur-xl border-b border-slate-800"
+
+:
+
+"bg-[#020617]/40 backdrop-blur-md"
+
+}
+
+
+`}
+
+
+
+>
+
+
+
+<div
+
+
+className="
+
+max-w-7xl
+
+mx-auto
+
+
+px-5
+
+sm:px-8
+
+lg:px-12
+
+
+py-4
+
+sm:py-5
+
+
+flex
+
+justify-between
+
+items-center
+
+
+"
+
+>
+
+
+
+
+
+
+
+{/* LOGO */}
+
+
+
+<Link
+
+
+to="/"
+
+onClick={handleNavigation}
+
+
+className="
+
+cursor-pointer
+
+font-bold
+
+
+text-lg
+
+sm:text-xl
+
+md:text-2xl
+
+
+whitespace-nowrap
+
+"
+
+>
+
+
+
+<span className="text-cyan-400">
+
+&lt;
+
+</span>
+
+
+
+<span className="text-white">
+
+Anirban Roy
+
+</span>
+
+
+
+<span className="text-cyan-400">
+
+/&gt;
+
+</span>
+
+
+
+</Link>
+
+
+
+
+
+
+
+
+
+
+{/* DESKTOP MENU */}
+
+
+
+<ul
+
+
+className="
+
+hidden
+
+lg:flex
+
+
+items-center
+
+
+gap-6
+
+xl:gap-8
+
+
+text-slate-300
+
+font-medium
+
+"
+
+>
+
+
+
+{
+
+menuItems.map((item)=>(
+
+
+<li
+
+key={item.path}
+
+>
+
+
+<Link
+
+
+to={item.path}
+
+
+onClick={handleNavigation}
+
+
+className="
+
+hover:text-cyan-400
+
+transition
+
+duration-300
+
+"
+
+>
+
+
+{item.label}
+
+
+</Link>
+
+
+</li>
+
+
+
+))
+
+
+}
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+{/* MOBILE MENU BUTTON */}
+
+
+
+<div
+
+className="
+
+lg:hidden
+
+"
+
+>
+
+
+{
+
+
+isOpen
+
+
+?
+
+
+<FiX
+
+size={30}
+
+className="
+
+text-cyan-400
+
+cursor-pointer
+
+"
+
+onClick={()=>setIsOpen(false)}
+
+/>
+
+
+:
+
+
+<FiMenu
+
+size={30}
+
+className="
+
+text-cyan-400
+
+cursor-pointer
+
+"
+
+onClick={()=>setIsOpen(true)}
+
+/>
+
+
+
+}
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{/* MOBILE MENU */}
+
+
+
+<div
+
+
+className={`
+
+
+lg:hidden
+
+
+overflow-hidden
+
+
+transition-all
+
+duration-300
+
+
+
+${
+
+isOpen
+
+?
+
+"max-h-screen opacity-100"
+
+:
+
+"max-h-0 opacity-0"
+
+}
+
+
+`}
+
+
+
+>
+
+
+<div
+
+
+className="
+
+bg-[#020617]
+
+border-t
+
+border-slate-800
+
+shadow-xl
+
+"
+
+
+>
+
+
+
+<ul
+
+
+className="
+
+flex
+
+flex-col
+
+
+items-center
+
+
+gap-6
+
+
+py-8
+
+
+text-slate-300
+
+
+font-medium
+
+"
+
+>
+
+
+{
+
+
+menuItems.map((item)=>(
+
+
+<li
+
+
+key={item.path}
+
+
+>
+
+
+<Link
+
+
+to={item.path}
+
+
+onClick={handleNavigation}
+
+
+className="
+
+text-lg
+
+hover:text-cyan-400
+
+transition
+
+"
+
+>
+
+
+{item.label}
+
+
+</Link>
+
+
+</li>
+
+
+
+))
+
+
+}
+
+
+
+
+</ul>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</nav>
+
+
+
+);
+
+
+};
+
+
 
 export default Navbar;

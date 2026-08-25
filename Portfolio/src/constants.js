@@ -66,114 +66,100 @@ import c from './assets/anirban_project/c.jpg'
 
 
 
+import {
+  SiPytorch,
+  SiTensorflow,
+  SiOpencv,
+  SiPandas,
+  SiScikitlearn,
+  SiOpenai,
+  SiArduino,
+  SiRaspberrypi,
+  SiLatex,
+  SiCisco,
+} from "react-icons/si";
 
+import {
+  FaCode,
+  FaDatabase,
+  FaNetworkWired
+} from "react-icons/fa";
 
 
 export const SkillsInfo = [
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
-      { name: 'Next JS', logo: nextjsLogo },
-      { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
-    ],
-  },
-  {
-    title: 'Backend',
-    skills: [
-      
-      { name: 'Node JS', logo: nodejsLogo },
-      { name: 'Express JS', logo: expressjsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
-      { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'Firebase', logo: firebaseLogo },
-    
-    ],
-  },
-  {
-    title: 'Languages',
-    skills: [
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      { name: 'C-Sharp', logo: csharpLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-  
-    ],
-  },
-  {
-    title: 'Tools',
-    skills: [
-      { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
-      { name: 'Figma', logo: figmaLogo },
-    ],
-  },
-];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Webverse Digital",
-      date: "April 2024 - Present",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-    {
-      id: 1,
-      img: agcLogo,
-      role: "Fullstack Engineer",
-      company: "Agumentik Group of Companies",
-      date: "July 2023 - March 2024",
-      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "SQL",
-      ],
-    },
-    {
-      id: 2,
-      img: newtonschoolLogo,
-      role: "Frontend Intern",
-      company: "Newton School",
-      date: "September 2021 - August 2022",
-      desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-      skills: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Bootstrap",
-        "Figma",
-        "Material UI",
-      ],
-    },
-  ];
+{
+title:"Programming Languages",
+skills:[
+ {name:"Python",logo:pythonLogo},
+ {name:"C++",logo:cppLogo},
+ {name:"C",logo:cLogo},
+ {name:"Java",logo:javaLogo},
+ {name:"JavaScript",logo:javascriptLogo},
+]
+},
+
+
+{
+title:"AI & Machine Learning",
+skills:[
+ {name:"PyTorch",logo:SiPytorch},
+ {name:"TensorFlow",logo:SiTensorflow},
+ {name:"Scikit-learn",logo:SiScikitlearn},
+ {name:"OpenCV",logo:SiOpencv},
+ {name:"Pandas",logo:SiPandas},
+]
+},
+
+
+{
+title:"Web Development",
+skills:[
+ {name:"React.js",logo:reactjsLogo},
+ {name:"Next.js",logo:nextjsLogo},
+ {name:"Node.js",logo:nodejsLogo},
+ {name:"Express.js",logo:expressjsLogo},
+ {name:"Tailwind CSS",logo:tailwindcssLogo},
+]
+},
+
+
+{
+title:"Databases & Backend",
+skills:[
+ {name:"MongoDB",logo:mongodbLogo},
+ {name:"MySQL",logo:mysqlLogo},
+ {name:"Firebase",logo:firebaseLogo},
+ {name:"REST API",logo:FaNetworkWired},
+ {name:"Postman",logo:postmanLogo},
+]
+},
+
+
+{
+title:"Tools & Platforms",
+skills:[
+ {name:"Git",logo:gitLogo},
+ {name:"GitHub",logo:githubLogo},
+ {name:"OpenGL",logo:FaCode},
+ {name:"Arduino",logo:SiArduino},
+ {name:"Raspberry Pi",logo:SiRaspberrypi},
+]
+},
+
+
+{
+title:"Research & Others",
+skills:[
+ {name:"LaTeX",logo:SiLatex},
+ {name:"Cisco Packet Tracer",logo:SiCisco},
+ {name:"MIT App Inventor",logo:FaCode},
+ {name:"PyGame",logo:pythonLogo},
+ {name:"C#",logo:csharpLogo},
+]
+}
+
+];
   
   export const education = [
     {
@@ -204,105 +190,242 @@ export const SkillsInfo = [
       degree: "Higher Secondary Certificate - HSC",
     },
     {
-      id: 3,
-      img: kuet,
-      school: "Khulna University of Engineering & Technology - KUET",
-      date: "2026",
-      grade: "CGPA 3.50",
-      desc: "I am currently pursuing my undergraduate studies in Computer Science and Engineering at KUET, where I have developed strong technical skills across areas like programming, machine learning, and web development. I was honored as the Runner-up in the IEEE 3MT Thesis Competition at CUET, and have actively engaged in research, technical events, and collaborative projects that have broadened both my academic and practical expertise.",
-      degree: "Bachelor of Science in Computer Science and Engineering",
-    },
+  id: 3,
+
+  img: kuet,
+
+  school: "Khulna University of Engineering & Technology - KUET",
+
+  date: "2019 - 2025",
+
+  grade: "CGPA 3.48",
+
+  desc:
+    "I completed my Bachelor of Science in Computer Science and Engineering from Khulna University of Engineering & Technology (KUET). During my undergraduate journey, I developed strong expertise in Artificial Intelligence, Machine Learning, Computer Vision, and software engineering. I actively participated in research projects, technical competitions, and collaborative works, leading to publications and ongoing research contributions in intelligent systems.",
+
+  degree:
+    "Bachelor of Science in Computer Science and Engineering",
+},
   ];
   
   export const projects = [
-    {
-      id: 0,
-      title: "WaveGuard",
-      description:
-        "WaveGuard is an innovative flood monitoring and rescue system designed to assist flood-affected communities. It leverages natural language processing (NLP) to analyze crowdsourced reports, assesses the severity of flood situations, and enables victims to request timely rescue. The platform features an interactive map highlighting flood zones, nearby shelters, and relief centers. It also supports volunteer coordination, donation management, and provides vital information on flood safety and medical assistance, making disaster response more efficient and community-driven.",
-      image: waveguard,
-      tags: ["React", "Node.js", "Express", "MongoDB", "NLP"],
-      github: "https://github.com/Anirban96Roy/WaveGuard",
-      
-    },
-    {
-      id: 1,
-      title: "PetMoments",
-      description:
-        "PetMoments is a vibrant social app designed especially for pet lovers, with a special focus on cats. Users can explore detailed information about different cat breeds, care tips, and health advice. The app also features a community section where users can share photos, videos, and stories about their pets—just like a mini social network for pet enthusiasts. Whether you want to connect with fellow pet lovers, showcase your furry friends, or learn more about cat care, PetMoments is your go-to app for all things pet!",
-      image: one,
-      tags: ["SwiftUI", "Firebase", "Social App", "Pet Care", "Community"],
-      github: "https://github.com/Anirban96Roy/PetMoments",
-      
-    },
-    {
-      id: 2,
-      title: "Compiler_Project",
-      description:
-        "This project implements a compiler for a custom-designed pseudo programming language. It supports variable declarations, arithmetic and bitwise operations, conditional statements, loops, functions, classes with inheritance, and built-in math functions like FACTORIAL, LOG, and BIGMOD. The compiler parses structured input code and simulates execution by generating descriptive outputs, making it ideal for understanding core compiler concepts and programming logic.",
-      image: com,
-      tags: ["Compiler", "Programming Language", "Parser", "Functions", "Classes"],
-      github: "https://github.com/Anirban96Roy/Compiler-Project",
-      
-    },
-    {
-      id: 3,
-      title: "GuessTheWord",
-      description:
-        "Hangman Game in SwiftUI:A simple and interactive Hangman game built using SwiftUI. Players guess letters to uncover a hidden word with only 7 attempts. The game features random word selection, live guess tracking, win/lose messages, and an easy \"New Game\" reset option. Ideal for SwiftUI beginners to understand state management, user input handling, and game logic.",
-      image: hang,
-      tags: ["SwiftUI", "Game Development", "Hangman", "State Management", "User Input"],
-      github: "https://github.com/Anirban96Roy/SwiftUI-GuessTheWord",
-      
-    },
-    {
-      id: 4,
-      title: "VoiceGPT-Assistant",
-      description:
-        "VoiceGPT-Assistant is an AI-powered voice assistant built with Python. It uses speech recognition and text-to-speech to interact with users via voice, performing tasks like opening websites, telling the time, and answering queries using Google’s Generative AI. The assistant, named “Baymax,” offers a hands-free, conversational interface for smart desktop interactions.",
-      image: voice,
-      tags: ["Python", "Voice Assistant","Text-to-Speech", "AI Assistant"],
-      github: "https://github.com/Anirban96Roy/VoiceGPT-Assistant",
-      
-    },
-    {
-      id: 5,
-      title: "Smart Irrigation System",
-      description:
-        "This Arduino-based Smart Irrigation System automates plant watering using real-time soil moisture data. It intelligently controls a water pump, ensuring crops receive adequate water only when needed—saving both water and effort. The system includes sensors to monitor soil moisture and can be extended with IoT modules for remote monitoring and control.",
-      image: arduino,
-      tags: ["Arduino", "Smart Irrigation", "Automation", "IoT"],
-      github: "https://github.com/Anirban96Roy/Smart-Irrigation-System",
-      
-    },
-    {
-      id: 6,
-      title: "Diet Mart",
-      description:
-        "Diet-Mart is a Laravel-based e-commerce website focused on healthy food and diet products. It features user-friendly browsing, product categorization, cart management, and secure checkout. Designed with a clean UI, it offers a smooth shopping experience for customers looking to maintain a healthy lifestyle.",
-      image: back,
-      tags: ["Laravel", "PHP", "MySQL", "E-commerce", "Web Development"],
-      github: "https://github.com/Anirban96Roy/Diet-Mart",
-      
-    },
-    {
-      id: 7,
-      title: "Pet-Buddy",
-      description:
-        "PetBuddy is an Android application for buying and selling pets, designed to connect pet lovers and breeders in one platform. The app includes user authentication, pet listings with images and details, and category-based browsing. Built using modern Android components and design patterns (such as MVVM), it ensures clean architecture and a smooth user experience.",
-      image: imagesearchLogo,
-      tags: ["Android", "Firebase","Java", "Mobile App Development", "XML UI Design"],
-      github: "https://github.com/Anirban96Roy/PetBuddy-Cse-3120/tree/main",
-      
-    },
-    {
-      id: 8,
-      title: "Traffic Management System",
-      description:
-        "A C++-based console application designed to manage vehicle records, traffic challans, and emergency helpline information. It features password-protected access, CRUD operations for vehicle data, challan tracking via file storage, search functionality, and driving rules. Built using Object-Oriented Programming concepts like classes, inheritance, encapsulation, and file I/O operations for efficient data handling.",
-      image: c,
-      tags: ["C++", "Console Application", "OOP", "File I/O", "Vehicle Management"],
-      github: "https://github.com/Anirban96Roy/Traffic-Management-System",
-      
-    }
-  ];  
+
+{
+id:0,
+
+title:
+"WaveGuard: AI-based Flood Monitoring and Rescue System",
+
+description:
+"An intelligent disaster-response platform combining Natural Language Processing (NLP), geospatial analytics, and real-time information processing. The system analyzes crowdsourced flood reports, identifies affected regions, and supports rescue coordination through interactive mapping and community-driven response.",
+
+image:waveguard,
+
+tags:[
+"Artificial Intelligence",
+"NLP",
+"Geospatial Analytics",
+"React",
+"Node.js"
+],
+
+github:
+"https://github.com/Anirban96Roy/WaveGuard"
+
+},
+
+
+
+{
+id:1,
+
+title:
+"VoiceGPT: AI Voice Assistant",
+
+description:
+"An AI-powered conversational assistant developed using Python, speech recognition, text-to-speech technology, and generative AI services. The system enables hands-free interaction and performs intelligent desktop automation tasks.",
+
+image:voice,
+
+tags:[
+"Python",
+"Generative AI",
+"Speech Recognition",
+"AI Assistant"
+],
+
+github:
+"https://github.com/Anirban96Roy/VoiceGPT-Assistant"
+
+},
+
+
+
+{
+id:2,
+
+title:
+"Smart Irrigation System",
+
+description:
+"An IoT-based automated irrigation solution using Arduino and sensor-driven monitoring. The system analyzes soil moisture conditions and controls water supply intelligently to improve agricultural efficiency.",
+
+image:arduino,
+
+tags:[
+"Arduino",
+"IoT",
+"Automation",
+"Embedded System"
+],
+
+github:
+"https://github.com/Anirban96Roy/Smart-Irrigation-System"
+
+},
+
+
+
+{
+id:3,
+
+title:
+"Compiler Design Project",
+
+description:
+"A custom compiler implementation supporting parsing, variables, operators, conditional statements, loops, functions, and object-oriented programming concepts. Developed to explore programming language processing and compiler architecture.",
+
+image:com,
+
+tags:[
+"Compiler Design",
+"Parser",
+"C++",
+"Programming Languages"
+],
+
+github:
+"https://github.com/Anirban96Roy/Compiler-Project"
+
+},
+
+
+
+{
+id:4,
+
+title:
+"Traffic Management System",
+
+description:
+"A C++ based traffic management application implementing object-oriented programming principles, file handling, vehicle record management, and administrative operations.",
+
+image:c,
+
+tags:[
+"C++",
+"OOP",
+"File Processing"
+],
+
+github:
+"https://github.com/Anirban96Roy/Traffic-Management-System"
+
+},
+
+
+
+{
+id:5,
+
+title:
+"PetMoments: Social Platform for Pet Communities",
+
+description:
+"A mobile social application for pet enthusiasts featuring pet information, community interaction, and content sharing capabilities.",
+
+image:one,
+
+tags:[
+"SwiftUI",
+"Firebase",
+"Mobile Application"
+],
+
+github:
+"https://github.com/Anirban96Roy/PetMoments"
+
+},
+
+
+
+{
+id:6,
+
+title:
+"Diet Mart",
+
+description:
+"A Laravel-based e-commerce platform designed for healthy food products with product management, shopping cart, and customer interaction features.",
+
+image:back,
+
+tags:[
+"Laravel",
+"PHP",
+"MySQL"
+],
+
+github:
+"https://github.com/Anirban96Roy/Diet-Mart"
+
+},
+
+
+
+{
+id:7,
+
+title:
+"PetBuddy Android Application",
+
+description:
+"An Android-based marketplace connecting pet owners and buyers with authentication, pet listings, and Firebase-powered data management.",
+
+image:imagesearchLogo,
+
+tags:[
+"Android",
+"Java",
+"Firebase"
+],
+
+github:
+"https://github.com/Anirban96Roy/PetBuddy-Cse-3120"
+
+},
+
+
+
+{
+id:8,
+
+title:
+"GuessTheWord Game",
+
+description:
+"A SwiftUI-based interactive word guessing game demonstrating state management, user interaction, and mobile application development concepts.",
+
+image:hang,
+
+tags:[
+"SwiftUI",
+"Game Development"
+],
+
+github:
+"https://github.com/Anirban96Roy/SwiftUI-GuessTheWord"
+
+}
+
+];

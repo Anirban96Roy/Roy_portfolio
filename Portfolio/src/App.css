@@ -1,1 +1,64 @@
 @import "tailwindcss";
+
+
+.section-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-left: 24px;
+
+    padding-right: 24px;
+
+}
+
+
+
+.section-title {
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    color: #f8fafc;
+
+}
+
+
+
+.section-subtitle {
+
+    margin-top: 12px;
+
+    color: #94a3b8;
+
+    font-size: 1.1rem;
+
+}
+
+
+/* Global dark cards */
+
+.card {
+
+    background: #0f172a;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 16px;
+
+}
+
+
+
+/* Cyan glow effect */
+
+.glow {
+
+    box-shadow:
+    0 0 30px rgba(34,211,238,0.25);
+
+}

@@ -1,66 +1,453 @@
-// src/components/Skills/Skills.jsx
 import React from "react";
 import { SkillsInfo } from "../../constants";
 import Tilt from "react-parallax-tilt";
 
-const Skills = () => (
-  <section
-    id="skills"
-    className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom "
-  >
-    {/* Section Title */}
-    <div className="text-center mb-8">
-      <h2 className="text-3xl sm:text-4xl font-bold text-black">SKILLS</h2>
-      <div className="w-24 h-1  mx-auto mt-2"></div>
-      <p className="text-gray-800 mt-4 text-lg font-semibold">
-      A collection of my technical skills and expertise honed through various projects and experiences
-      </p>
-    </div>
 
-    {/* Skill Categories */}
-    <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
-      {SkillsInfo.map((category) => (
-        <div
-          key={category.title}
-          className="bg-[#EBFFD1] backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border border-white 
-          shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
-        >
-          <h3 className="text-2xl sm:text-3xl font-semibold text-black mb-4 text-center">
-            {category.title}
-          </h3>
+const Skills = () => {
 
-          {/* Skill Items - 3 per row on larger screens */}
-          <Tilt
-            key={category.title}
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
-            gyroscope={true}
-          >
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
-              {category.skills.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center"
-                >
-                  <img
-                    src={skill.logo}
-                    alt={`${skill.name} logo`}
-                    className="w-6 h-6 sm:w-8 sm:h-8"
-                  />
-                  <span className="text-xs sm:text-sm text-black">
-                    {skill.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </Tilt>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+
+return (
+
+<section
+
+id="skills"
+
+className="
+py-20
+md:py-24
+px-5
+sm:px-8
+md:px-12
+bg-[#020617]
+"
+
+>
+
+
+<div
+
+className="
+max-w-6xl
+mx-auto
+"
+
+>
+
+
+
+
+
+{/* HEADER */}
+
+<div
+
+className="
+text-center
+mb-10
+md:mb-14
+"
+
+>
+
+
+<h2
+
+className="
+text-3xl
+sm:text-4xl
+font-bold
+text-white
+"
+
+>
+
+Technical Skills
+
+</h2>
+
+
+
+
+
+<div
+
+className="
+w-20
+h-1
+bg-cyan-400
+mx-auto
+mt-5
+rounded-full
+"
+
+/>
+
+
+
+
+
+<p
+
+className="
+mt-5
+text-sm
+sm:text-base
+md:text-lg
+text-slate-400
+leading-relaxed
+"
+
+>
+
+Technologies and tools developed through research,
+software engineering, and AI projects.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+{/* SKILL CATEGORIES */}
+
+
+<div
+
+className="
+grid
+grid-cols-1
+lg:grid-cols-2
+gap-6
+md:gap-8
+"
+
+>
+
+
+{
+
+
+SkillsInfo.map(category=>(
+
+
+<Tilt
+
+key={category.title}
+
+tiltMaxAngleX={8}
+
+tiltMaxAngleY={8}
+
+perspective={1000}
+
+scale={1.02}
+
+>
+
+
+<div
+
+className="
+relative
+bg-slate-900/70
+border
+border-slate-800
+rounded-3xl
+p-5
+sm:p-6
+md:p-8
+overflow-hidden
+hover:border-cyan-400/50
+transition
+"
+
+>
+
+
+
+
+
+{/* Glow */}
+
+
+<div
+
+className="
+absolute
+right-0
+top-0
+w-32
+h-32
+sm:w-40
+sm:h-40
+bg-cyan-400/10
+blur-3xl
+rounded-full
+"
+
+></div>
+
+
+
+
+
+
+
+
+
+
+<h3
+
+className="
+relative
+text-xl
+sm:text-2xl
+font-bold
+text-white
+text-center
+mb-6
+md:mb-8
+"
+
+>
+
+{category.title}
+
+</h3>
+
+
+
+
+
+
+
+
+
+<div
+
+className="
+relative
+grid
+grid-cols-2
+sm:grid-cols-3
+gap-3
+sm:gap-5
+"
+
+>
+
+
+{
+
+
+category.skills.map(skill=>(
+
+
+<div
+
+key={skill.name}
+
+className="
+group
+bg-[#111c32]
+border
+border-slate-700
+rounded-2xl
+p-3
+sm:p-4
+md:p-5
+flex
+flex-col
+items-center
+justify-center
+gap-2
+sm:gap-3
+hover:bg-cyan-400/10
+hover:border-cyan-400/50
+hover:-translate-y-2
+transition-all
+duration-300
+"
+
+>
+
+
+
+
+
+
+
+
+{/* ICON BOX */}
+
+
+<div
+
+className="
+w-12
+h-12
+sm:w-14
+sm:h-14
+md:w-16
+md:h-16
+rounded-xl
+sm:rounded-2xl
+bg-[#0b162b]
+border
+border-slate-700
+flex
+items-center
+justify-center
+shadow-lg
+group-hover:shadow-cyan-400/30
+transition
+"
+
+>
+
+
+{
+
+
+typeof skill.logo==="string"
+
+?
+
+<img
+
+src={skill.logo}
+
+alt={skill.name}
+
+className="
+w-7
+h-7
+sm:w-8
+sm:h-8
+md:w-10
+md:h-10
+object-contain
+group-hover:scale-110
+transition
+duration-300
+"
+
+/>
+
+
+:
+
+
+<skill.logo
+
+className="
+w-7
+h-7
+sm:w-8
+sm:h-8
+md:w-10
+md:h-10
+text-white
+group-hover:scale-110
+transition
+duration-300
+"
+
+/>
+
+
+}
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<span
+
+className="
+text-xs
+sm:text-sm
+font-semibold
+text-center
+text-slate-300
+group-hover:text-cyan-300
+transition
+"
+
+>
+
+{skill.name}
+
+</span>
+
+
+
+
+
+</div>
+
+
+))
+
+
+}
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+</Tilt>
+
+
+))
+
+
+}
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+)
+
+}
+
 
 export default Skills;
