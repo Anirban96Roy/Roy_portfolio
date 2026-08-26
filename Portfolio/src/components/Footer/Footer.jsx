@@ -17,23 +17,15 @@ return (
 
 className="
 relative
-
 bg-[#020617]
-
 border-t
-
 border-slate-800
-
 text-white
-
 mt-16
-
 overflow-hidden
-
 "
 
 >
-
 
 
 {/* Background Glow */}
@@ -42,30 +34,20 @@ overflow-hidden
 
 className="
 absolute
-
 top-0
-
 left-1/2
-
 -translate-x-1/2
-
 w-[300px]
-
 h-[150px]
-
 md:w-[600px]
-
 md:h-[200px]
-
 bg-cyan-400/10
-
 blur-3xl
-
 rounded-full
-
 "
 
 />
+
 
 
 
@@ -77,29 +59,18 @@ rounded-full
 
 className="
 relative
-
 max-w-7xl
-
 mx-auto
-
 px-5
-
 md:px-12
-
 py-12
-
 md:py-14
-
 grid
-
 grid-cols-1
-
 md:grid-cols-3
-
 gap-10
-
 md:gap-12
-
+items-start
 "
 
 >
@@ -120,9 +91,7 @@ md:gap-12
 
 className="
 text-center
-
 md:text-left
-
 "
 
 >
@@ -132,9 +101,7 @@ md:text-left
 
 className="
 text-3xl
-
 font-bold
-
 "
 
 >
@@ -165,24 +132,28 @@ Anirban Roy
 
 
 
+
+
 <p
 
 className="
 mt-5
-
 text-slate-300
-
 leading-relaxed
-
+max-w-md
+mx-auto
+md:mx-0
+md:text-justify
 "
 
 >
 
-Artificial Intelligence Researcher |
-
-Computer Science Engineer
+Artificial Intelligence Researcher
 
 </p>
+
+
+
 
 
 
@@ -193,22 +164,24 @@ Computer Science Engineer
 
 className="
 mt-4
-
 text-slate-500
-
 leading-relaxed
-
 text-sm
-
+max-w-md
+mx-auto
+md:mx-0
+md:text-justify
 "
 
 >
 
-Building intelligent systems through
-Artificial Intelligence, Machine Learning,
+Building intelligent systems through Artificial Intelligence,
 Computer Vision, and Human-Centered AI.
 
 </p>
+
+
+
 
 
 
@@ -221,27 +194,16 @@ Computer Vision, and Human-Centered AI.
 
 className="
 mt-6
-
 inline-flex
-
 items-center
-
 px-4
-
 py-2
-
 rounded-full
-
 bg-cyan-400/10
-
 border
-
 border-cyan-400/30
-
 text-cyan-400
-
 text-sm
-
 "
 
 >
@@ -256,7 +218,10 @@ text-sm
 
 
 
+
 </div>
+
+
 
 
 
@@ -272,13 +237,11 @@ text-sm
 {/* QUICK LINKS */}
 
 
+
 <div
 
 className="
 text-center
-
-md:text-left
-
 "
 
 >
@@ -288,11 +251,8 @@ md:text-left
 
 className="
 text-xl
-
 font-semibold
-
 mb-6
-
 "
 
 >
@@ -305,29 +265,23 @@ Explore
 
 
 
+
+
+
+
 <ul
 
 className="
-
 flex
-
-flex-row
-
-flex-wrap
-
-justify-center
-
-md:justify-start
-
-gap-x-6
-
-gap-y-3
-
+flex-col
+items-center
+space-y-4
 text-slate-400
-
 "
 
 >
+
+
 
 
 
@@ -372,6 +326,8 @@ flex
 
 items-center
 
+justify-center
+
 gap-2
 
 hover:text-cyan-400
@@ -382,10 +338,15 @@ group
 
 "
 
+
 >
 
 
 {name}
+
+
+
+
 
 
 
@@ -394,20 +355,22 @@ group
 size={15}
 
 className="
-
 opacity-0
-
 group-hover:opacity-100
-
 transition
-
+hidden
+md:block
 "
 
 />
 
 
 
+
+
+
 </a>
+
 
 
 
@@ -418,7 +381,9 @@ transition
 ))
 
 
+
 }
+
 
 
 
@@ -430,11 +395,9 @@ transition
 
 
 
+
+
 </div>
-
-
-
-
 
 
 
@@ -449,9 +412,7 @@ transition
 
 className="
 text-center
-
 md:text-left
-
 "
 
 >
@@ -461,11 +422,8 @@ md:text-left
 
 className="
 text-xl
-
 font-semibold
-
 mb-6
-
 "
 
 >
@@ -480,21 +438,19 @@ Connect
 
 
 
+
+
+
+
 <p
 
 className="
 text-slate-400
-
 text-sm
-
 mb-6
-
 max-w-sm
-
 mx-auto
-
 md:mx-0
-
 "
 
 >
@@ -510,20 +466,21 @@ software projects, and innovative ideas.
 
 
 
+
+
 <div
 
 className="
 flex
-
 justify-center
-
 md:justify-start
-
 gap-4
-
 "
 
 >
+
+
+
 
 
 
@@ -540,35 +497,20 @@ rel="noopener noreferrer"
 
 className="
 w-12
-
 h-12
-
 md:w-14
-
 md:h-14
-
 rounded-2xl
-
 bg-slate-900
-
 border
-
 border-slate-800
-
 flex
-
 items-center
-
 justify-center
-
 hover:border-cyan-400
-
 hover:text-cyan-400
-
 hover:-translate-y-1
-
 transition
-
 "
 
 >
@@ -576,6 +518,7 @@ transition
 <Github size={22}/>
 
 </a>
+
 
 
 
@@ -594,35 +537,20 @@ rel="noopener noreferrer"
 
 className="
 w-12
-
 h-12
-
 md:w-14
-
 md:h-14
-
 rounded-2xl
-
 bg-slate-900
-
 border
-
 border-slate-800
-
 flex
-
 items-center
-
 justify-center
-
 hover:border-cyan-400
-
 hover:text-cyan-400
-
 hover:-translate-y-1
-
 transition
-
 "
 
 >
@@ -638,41 +566,27 @@ transition
 
 
 
+
 <a
 
 href="mailto:royanirban347@gmail.com"
 
 className="
 w-12
-
 h-12
-
 md:w-14
-
 md:h-14
-
 rounded-2xl
-
 bg-slate-900
-
 border
-
 border-slate-800
-
 flex
-
 items-center
-
 justify-center
-
 hover:border-cyan-400
-
 hover:text-cyan-400
-
 hover:-translate-y-1
-
 transition
-
 "
 
 >
@@ -680,6 +594,7 @@ transition
 <Mail size={22}/>
 
 </a>
+
 
 
 
@@ -693,15 +608,14 @@ transition
 
 
 
+
+
 <div
 
 className="
 mt-7
-
 text-sm
-
 text-slate-500
-
 "
 
 >
@@ -718,17 +632,21 @@ Based in Khulna, Bangladesh 🇧🇩
 
 
 
+
+</div>
+
+
+
+
+
+
+
+
+
 </div>
 
 
 
-
-
-
-
-
-
-</div>
 
 
 
@@ -746,23 +664,14 @@ Based in Khulna, Bangladesh 🇧🇩
 
 className="
 relative
-
 border-t
-
 border-slate-800
-
 py-5
-
 px-5
-
 text-center
-
 text-xs
-
 md:text-sm
-
 text-slate-500
-
 "
 
 >
@@ -782,6 +691,8 @@ All rights reserved.
 
 
 </div>
+
+
 
 
 

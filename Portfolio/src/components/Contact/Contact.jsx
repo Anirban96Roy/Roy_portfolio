@@ -1,5 +1,6 @@
 import React,{useRef,useState} from "react";
 import emailjs from "@emailjs/browser";
+
 import {
 Mail,
 Phone,
@@ -10,16 +11,16 @@ Send
 } from "lucide-react";
 
 
-const Contact=()=>{
+const Contact = () => {
 
 
-const form=useRef();
+const form = useRef();
 
-const [sent,setSent]=useState(false);
+const [sent,setSent] = useState(false);
 
 
 
-const sendEmail=(e)=>{
+const sendEmail = (e)=>{
 
 e.preventDefault();
 
@@ -45,9 +46,10 @@ form.current.reset();
 
 setTimeout(()=>{
 
-setSent(false)
+setSent(false);
 
-},4000)
+},4000);
+
 
 });
 
@@ -68,14 +70,16 @@ id="contact"
 className="
 relative
 pt-32
-md:py-24
+md:pt-25
+md:pb-16
 px-5
-md:px-12
+md:px-10
 bg-[#020617]
 overflow-hidden
 "
 
 >
+
 
 
 
@@ -86,25 +90,17 @@ overflow-hidden
 
 className="
 absolute
-
 w-[250px]
 h-[250px]
-
 md:w-[500px]
 md:h-[500px]
-
 bg-cyan-400/10
-
 blur-3xl
-
 rounded-full
-
 top-10
 left-[-80px]
-
 md:top-0
 md:left-0
-
 "
 
 />
@@ -115,24 +111,16 @@ md:left-0
 
 className="
 absolute
-
 w-[220px]
 h-[220px]
-
 md:w-[400px]
 md:h-[400px]
-
 bg-blue-500/10
-
 blur-3xl
-
 rounded-full
-
 bottom-0
 right-[-60px]
-
 md:right-0
-
 "
 
 />
@@ -146,27 +134,16 @@ md:right-0
 
 className="
 relative
-
-max-w-6xl
-
+max-w-5xl
 mx-auto
-
 bg-[#071426]/80
-
 backdrop-blur-xl
-
 border
-
 border-slate-800
-
 rounded-3xl
-
 overflow-hidden
-
 shadow-2xl
-
 "
-
 
 >
 
@@ -176,15 +153,11 @@ shadow-2xl
 
 className="
 grid
-
 grid-cols-1
-
 md:grid-cols-2
-
 "
 
 >
-
 
 
 
@@ -194,33 +167,25 @@ md:grid-cols-2
 {/* LEFT SIDE */}
 
 
-
 <div
 
 className="
-p-6
-sm:p-8
-md:p-14
-
+p-5
+sm:p-6
+md:p-10
 "
 
 >
-
 
 
 <p
 
 className="
 text-cyan-400
-
 font-semibold
-
 tracking-wider
-
-mb-4
-
+mb-3
 text-sm
-
 "
 
 >
@@ -237,48 +202,48 @@ GET IN TOUCH
 
 className="
 text-3xl
-
 sm:text-4xl
-
-md:text-5xl
-
+md:text-4xl
 font-bold
-
 text-white
-
 leading-tight
-
 "
 
 >
 
-Let's Build Something
+<span className="md:hidden">
 
-<br className="hidden md:block"/>
+Let's Build
+<br />
+
+Something
+<br />
 
 Intelligent Together
 
+</span>
+
+
+<span className="hidden md:block">
+
+Let's Build Something
+<br />
+
+Intelligent Together
+
+</span>
+
+
 </h2>
-
-
-
-
-
 
 
 <p
 
 className="
-mt-6
-
+mt-4
 text-slate-400
-
 leading-relaxed
-
 text-sm
-
-md:text-base
-
 "
 
 >
@@ -294,79 +259,52 @@ discussion, or opportunities.
 
 
 
-
-
 {/* CONTACT CARDS */}
-
 
 
 <div
 
 className="
-mt-8
-
-md:mt-10
-
-space-y-4
-
+mt-6
+space-y-3
 "
 
 >
-
-
-
 
 <div
 
 className="
 flex
-
 items-center
-
-gap-4
-
-p-4
-
+gap-3
+p-3
 rounded-2xl
-
 bg-slate-900/60
-
 border
-
 border-slate-800
-
 hover:border-cyan-400/40
-
 transition
-
 "
 
 >
-
 
 <Mail
 
 className="
 text-cyan-400
-
 shrink-0
-
 "
 
 />
 
 
-
 <div>
-
 
 <p
 
 className="
 text-white
-
 font-semibold
-
 "
 
 >
@@ -376,16 +314,12 @@ Email
 </p>
 
 
-
 <p
 
 className="
 text-slate-400
-
 text-sm
-
 break-all
-
 "
 
 >
@@ -393,7 +327,6 @@ break-all
 royanirban347@gmail.com
 
 </p>
-
 
 
 </div>
@@ -411,25 +344,15 @@ royanirban347@gmail.com
 
 className="
 flex
-
 items-center
-
-gap-4
-
-p-4
-
+gap-3
+p-3
 rounded-2xl
-
 bg-slate-900/60
-
 border
-
 border-slate-800
-
 hover:border-cyan-400/40
-
 transition
-
 "
 
 >
@@ -439,13 +362,10 @@ transition
 
 className="
 text-cyan-400
-
 shrink-0
-
 "
 
 />
-
 
 
 
@@ -456,9 +376,7 @@ shrink-0
 
 className="
 text-white
-
 font-semibold
-
 "
 
 >
@@ -468,14 +386,11 @@ Phone
 </p>
 
 
-
 <p
 
 className="
 text-slate-400
-
 text-sm
-
 "
 
 >
@@ -500,25 +415,15 @@ text-sm
 
 className="
 flex
-
 items-center
-
-gap-4
-
-p-4
-
+gap-3
+p-3
 rounded-2xl
-
 bg-slate-900/60
-
 border
-
 border-slate-800
-
 hover:border-cyan-400/40
-
 transition
-
 "
 
 >
@@ -528,13 +433,10 @@ transition
 
 className="
 text-cyan-400
-
 shrink-0
-
 "
 
 />
-
 
 
 
@@ -545,9 +447,7 @@ shrink-0
 
 className="
 text-white
-
 font-semibold
-
 "
 
 >
@@ -557,15 +457,11 @@ Location
 </p>
 
 
-
-
 <p
 
 className="
 text-slate-400
-
 text-sm
-
 "
 
 >
@@ -575,20 +471,15 @@ Khulna, Bangladesh
 </p>
 
 
+</div>
+
 
 </div>
 
 
 
-</div>
-
-
-
-
-
 
 </div>
-
 
 
 
@@ -600,16 +491,12 @@ Khulna, Bangladesh
 {/* SOCIAL */}
 
 
-
 <div
 
 className="
 flex
-
-gap-4
-
-mt-8
-
+gap-3
+mt-6
 "
 
 >
@@ -625,19 +512,12 @@ rel="noreferrer"
 
 className="
 p-3
-
 rounded-xl
-
 bg-slate-800
-
 text-white
-
 hover:bg-cyan-400
-
 hover:text-black
-
 transition
-
 "
 
 >
@@ -645,6 +525,7 @@ transition
 <Github size={20}/>
 
 </a>
+
 
 
 
@@ -659,19 +540,12 @@ rel="noreferrer"
 
 className="
 p-3
-
 rounded-xl
-
 bg-slate-800
-
 text-white
-
 hover:bg-cyan-400
-
 hover:text-black
-
 transition
-
 "
 
 >
@@ -682,7 +556,10 @@ transition
 
 
 
+
+
 </div>
+
 
 
 
@@ -702,31 +579,50 @@ transition
 {/* FORM SIDE */}
 
 
-
-
 <div
 
 className="
-p-6
-
-sm:p-8
-
-md:p-14
-
+p-5
+sm:p-6
+md:p-10
+md:pt-[75px]
 border-t
-
 md:border-t-0
-
 md:border-l
-
 border-slate-800
-
 "
 
 >
 
+<h2
+
+className="
+text-3xl
+sm:text-4xl
+md:text-4xl
+font-bold
+text-white
+leading-tight
+mb-4
+"
+
+>
+Send me a Message
+</h2>
 
 
+<p
+
+className="
+text-slate-400
+text-sm
+leading-relaxed
+mb-6
+"
+
+>
+Have a project idea or research collaboration in mind? Let's discuss it.
+</p>
 
 <form
 
@@ -735,12 +631,10 @@ ref={form}
 onSubmit={sendEmail}
 
 className="
-space-y-5
-
+space-y-4
 "
 
 >
-
 
 
 <input
@@ -753,31 +647,19 @@ placeholder="Your Name"
 
 className="
 w-full
-
 px-5
-
 py-4
-
 rounded-xl
-
 bg-slate-900
-
 border
-
 border-slate-700
-
 text-white
-
 outline-none
-
 focus:border-cyan-400
-
 transition
-
 "
 
 />
-
 
 
 
@@ -793,31 +675,19 @@ placeholder="Your Email"
 
 className="
 w-full
-
 px-5
-
 py-4
-
 rounded-xl
-
 bg-slate-900
-
 border
-
 border-slate-700
-
 text-white
-
 outline-none
-
 focus:border-cyan-400
-
 transition
-
 "
 
 />
-
 
 
 
@@ -829,72 +699,42 @@ required
 
 name="message"
 
-rows="6"
+rows="4"
 
 placeholder="Tell me about your project..."
 
 className="
 w-full
-
 px-5
-
-py-4
-
+py-9
 rounded-xl
-
 bg-slate-900
-
 border
-
 border-slate-700
-
 text-white
-
 outline-none
-
 focus:border-cyan-400
-
 transition
-
 "
 
 />
-
-
-
-
-
-
 
 <button
 
 className="
 group
-
 flex
-
 items-center
-
 justify-center
-
 gap-3
-
 w-full
-
-py-4
-
+py-3
 rounded-xl
-
 bg-cyan-400
-
 text-black
-
 font-bold
-
 hover:bg-cyan-300
-
 transition
-
 "
 
 >
@@ -903,21 +743,25 @@ transition
 Send Message
 
 
+
+
+
 <Send
 
 size={18}
 
 className="
 group-hover:translate-x-1
-
 transition
-
 "
 
 />
 
 
+
 </button>
+
+
 
 
 
@@ -933,13 +777,9 @@ sent &&
 
 className="
 text-center
-
 text-cyan-400
-
 font-semibold
-
 animate-pulse
-
 "
 
 >
@@ -950,6 +790,9 @@ animate-pulse
 
 
 }
+
+
+
 
 
 
@@ -972,7 +815,11 @@ animate-pulse
 
 
 
+
+
 </div>
+
+
 
 
 

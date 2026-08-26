@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 
-
 const researchInterests = [
 
 "Artificial Intelligence",
@@ -16,6 +15,7 @@ const researchInterests = [
 "Healthcare AI"
 
 ];
+
 
 
 
@@ -72,9 +72,7 @@ doi:
 }
 
 
-
 ];
-
 
 
 
@@ -131,10 +129,6 @@ keywords:[
 ]
 
 },
-
-
-
-
 {
 
 type:
@@ -161,6 +155,7 @@ keywords:[
 
 
 
+
 {
 
 type:
@@ -182,6 +177,7 @@ keywords:[
 ]
 
 },
+
 
 
 
@@ -219,7 +215,6 @@ keywords:[
 
 
 
-
 const Research =()=>{
 
 
@@ -228,6 +223,7 @@ const [selectedItem,setSelectedItem] = useState(null);
 
 
 return(
+
 
 <section
 
@@ -256,7 +252,10 @@ mx-auto
 
 
 
+
+
 {/* HEADER */}
+
 
 <div
 
@@ -286,6 +285,7 @@ Research & Publications
 
 
 
+
 <div
 
 className="
@@ -298,6 +298,8 @@ rounded-full
 "
 
 />
+
+
 
 
 
@@ -322,6 +324,7 @@ Machine Learning, Computer Vision, and Human-Centered AI.
 
 
 
+
 </div>
 
 
@@ -331,8 +334,8 @@ Machine Learning, Computer Vision, and Human-Centered AI.
 
 
 
-
 {/* RESEARCH INTEREST */}
+
 
 <div
 
@@ -369,13 +372,15 @@ Research Interests
 
 
 
+
 <div
 
 className="
-flex
-flex-wrap
-gap-2
-sm:gap-3
+grid
+grid-cols-2
+md:flex
+md:flex-wrap
+gap-3
 "
 
 >
@@ -391,8 +396,11 @@ researchInterests.map(item=>(
 key={item}
 
 className="
+w-full
+md:w-auto
+min-h-[42px]
 px-3
-sm:px-4
+md:px-4
 py-2
 rounded-full
 bg-cyan-400/10
@@ -401,6 +409,10 @@ border-cyan-400/30
 text-cyan-400
 text-xs
 sm:text-sm
+text-center
+flex
+items-center
+justify-center
 hover:bg-cyan-400
 hover:text-slate-900
 hover:scale-105
@@ -425,8 +437,10 @@ duration-300
 </div>
 
 
+
 </div>
 {/* PUBLICATIONS */}
+
 
 <h3
 
@@ -444,6 +458,8 @@ md:mb-8
 Selected Publications
 
 </h3>
+
+
 
 
 
@@ -496,6 +512,7 @@ duration-300
 
 
 
+
 <span
 
 className="
@@ -542,6 +559,7 @@ leading-snug
 {paper.title}
 
 </h4>
+
 
 
 
@@ -639,6 +657,8 @@ Click to view details →
 
 
 
+
+
 </div>
 
 
@@ -679,6 +699,8 @@ md:mb-8
 Under Review & Ongoing Research
 
 </h3>
+
+
 
 
 
@@ -733,6 +755,7 @@ duration-300
 
 
 
+
 <span
 
 className="
@@ -747,7 +770,6 @@ font-semibold
 {item.type}
 
 </span>
-
 
 
 
@@ -782,7 +804,6 @@ leading-snug
 
 
 
-
 <p
 
 className="
@@ -799,7 +820,6 @@ line-clamp-5
 {item.description}
 
 </p>
-
 
 
 
@@ -865,7 +885,6 @@ transition
 
 
 
-
 <p
 
 className="
@@ -887,7 +906,6 @@ Click to explore details →
 
 
 
-
 </div>
 
 
@@ -899,7 +917,18 @@ Click to explore details →
 
 
 </div>
+
+
+
+
+</div>
+
+
+
+
+
 {/* MODAL */}
+
 
 
 {
@@ -925,6 +954,7 @@ py-6
 onClick={()=>setSelectedItem(null)}
 
 >
+
 
 
 <div
@@ -954,9 +984,6 @@ onClick={(e)=>e.stopPropagation()}
 
 
 
-{/* CLOSE BUTTON */}
-
-
 <button
 
 onClick={()=>setSelectedItem(null)}
@@ -970,7 +997,6 @@ sm:right-6
 text-slate-400
 hover:text-white
 text-2xl
-sm:text-3xl
 "
 
 >
@@ -984,10 +1010,6 @@ sm:text-3xl
 
 
 
-
-
-
-{/* STATUS */}
 
 
 <div
@@ -1029,6 +1051,7 @@ text-xs
 
 )
 
+
 }
 
 
@@ -1065,6 +1088,7 @@ text-xs
 
 )
 
+
 }
 
 
@@ -1077,10 +1101,6 @@ text-xs
 
 
 
-
-
-
-{/* TITLE */}
 
 
 <h2
@@ -1111,9 +1131,6 @@ leading-tight
 
 
 
-{/* AUTHORS */}
-
-
 {
 
 selectedItem.authors && (
@@ -1138,6 +1155,7 @@ text-slate-400
 
 )
 
+
 }
 
 
@@ -1146,9 +1164,6 @@ text-slate-400
 
 
 
-
-
-{/* VENUE */}
 
 
 {
@@ -1176,6 +1191,7 @@ leading-relaxed
 
 )
 
+
 }
 
 
@@ -1184,9 +1200,6 @@ leading-relaxed
 
 
 
-
-
-{/* DESCRIPTION */}
 
 
 <p
@@ -1214,9 +1227,6 @@ leading-relaxed
 
 
 
-{/* DOI */}
-
-
 {
 
 selectedItem.doi && (
@@ -1241,6 +1251,7 @@ break-words
 
 )
 
+
 }
 
 
@@ -1249,9 +1260,6 @@ break-words
 
 
 
-
-
-{/* KEYWORDS */}
 
 
 {
@@ -1311,6 +1319,8 @@ sm:text-sm
 
 )
 
+
+
 }
 
 
@@ -1332,9 +1342,6 @@ sm:text-sm
 
 }
 
-
-
-</div>
 
 
 </section>
