@@ -383,45 +383,6 @@ gap-4
 
 
 
-<a
-
-href="#research"
-
-className="
-w-full
-sm:w-auto
-
-text-center
-
-px-8
-
-py-3
-
-rounded-lg
-
-bg-cyan-400
-
-text-black
-
-font-semibold
-
-hover:bg-cyan-300
-
-transition
-
-shadow-lg
-
-shadow-cyan-500/20
-
-"
-
->
-
-Explore Research
-
-</a>
-
-
 
 
 

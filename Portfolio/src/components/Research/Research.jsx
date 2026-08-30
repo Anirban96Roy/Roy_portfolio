@@ -58,7 +58,7 @@ authors:
 "A. Roy, D. Saha, S. Debnath",
 
 venue:
-"International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure (2026)",
+"1st International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure (PECCII), IEEE, 2026",
 
 status:
 "Accepted & Presented",
@@ -67,7 +67,7 @@ description:
 "A document intelligence framework combining YOLO-based region detection, TrOCR-based text recognition, and dictionary refinement for accurate handwritten medicine name extraction.",
 
 doi:
-"IEEE Xplore-compatible camera-ready revision in progress"
+"DOI: 10.1109/PECCII70991.2026.11662060"
 
 }
 
@@ -108,27 +108,7 @@ keywords:[
 
 
 
-{
 
-type:
-"Ongoing Research Project",
-
-title:
-"CogniDrive: Multimodal Machine Learning Framework for Driver Cognitive Readiness Assessment in Conditionally Automated Vehicles",
-
-description:
-"Developing a machine learning framework to assess driver readiness during automated vehicle takeover using driving behaviour and physiological signals. Exploring reaction time, steering variation, speed changes, and heart-rate-related metrics with Random Forest, XGBoost, and LSTM models for safe human–machine interaction.",
-
-keywords:[
-
-"Autonomous Vehicles",
-"Human-Machine Interaction",
-"LSTM",
-"Multimodal Learning"
-
-]
-
-},
 {
 
 type:
@@ -203,6 +183,27 @@ keywords:[
 
 ]
 
+},
+{
+
+type:
+"Ongoing Research Project",
+
+title:
+"CogniDrive: Multimodal Machine Learning Framework for Driver Cognitive Readiness Assessment in Conditionally Automated Vehicles",
+
+description:
+"Developing a machine learning framework to assess driver readiness during automated vehicle takeover using driving behaviour and physiological signals. Exploring reaction time, steering variation, speed changes, and heart-rate-related metrics with Random Forest, XGBoost, and LSTM models for safe human–machine interaction.",
+
+keywords:[
+
+"Autonomous Vehicles",
+"Human-Machine Interaction",
+"LSTM",
+"Multimodal Learning"
+
+]
+
 }
 
 
@@ -230,6 +231,7 @@ return(
 id="research"
 
 className="
+scroll-mt-24
 py-20
 md:py-24
 px-5
@@ -239,7 +241,6 @@ bg-[#020617]
 "
 
 >
-
 
 <div
 

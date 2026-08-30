@@ -427,9 +427,9 @@ alt={selectedProject.title}
 
 className="
 w-full
-h-52
-sm:h-72
-object-cover
+max-h-[500px]
+object-contain
+bg-slate-950
 "
 
 />
