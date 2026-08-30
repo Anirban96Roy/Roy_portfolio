@@ -591,33 +591,7 @@ md:justify-start\r
 \r
 gap-4\r
 \r
-`,children:[b.jsx("a",{href:"#research",className:`\r
-w-full\r
-sm:w-auto\r
-\r
-text-center\r
-\r
-px-8\r
-\r
-py-3\r
-\r
-rounded-lg\r
-\r
-bg-cyan-400\r
-\r
-text-black\r
-\r
-font-semibold\r
-\r
-hover:bg-cyan-300\r
-\r
-transition\r
-\r
-shadow-lg\r
-\r
-shadow-cyan-500/20\r
-\r
-`,children:"Explore Research"}),b.jsxs("a",{href:"https://github.com/Anirban96Roy/",target:"_blank",rel:"noreferrer",className:`\r
+`,children:[b.jsxs("a",{href:"https://github.com/Anirban96Roy/",target:"_blank",rel:"noreferrer",className:`\r
 w-full\r
 sm:w-auto\r
 \r
@@ -800,7 +774,8 @@ w-full\r
 h-full\r
 object-cover\r
 object-center\r
-`})})]})})}),m6=["Artificial Intelligence","Machine Learning","Deep Learning","Computer Vision","Large Language Models","Human-Centered AI","Reinforcement Learning","Robotics","Autonomous Systems","Healthcare AI"],p6=[{title:"WaveGuard: A Flood Monitoring and Rescue System",authors:"A. N. Likhan, A. Roy, M. S. Salim, S. I. Hossain",venue:"SoftwareX (Elsevier), Vol. 32, 2025, Article 102361",status:"Published",description:"An AI-powered flood monitoring and rescue coordination system integrating natural language processing, geospatial analytics, and intelligent decision support for efficient disaster response.",doi:"DOI: 10.1016/j.softx.2025.102361"},{title:"A YOLO–TrOCR Pipeline with Dictionary Refinement for Handwritten Medicine Name Extraction",authors:"A. Roy, D. Saha, S. Debnath",venue:"International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure (2026)",status:"Accepted & Presented",description:"A document intelligence framework combining YOLO-based region detection, TrOCR-based text recognition, and dictionary refinement for accurate handwritten medicine name extraction.",doi:"IEEE Xplore-compatible camera-ready revision in progress"}],g6=[{type:"Undergraduate Thesis",title:"A Self-Supervised Feature Fusion and Ensemble Framework for Skin Lesion Classification",description:"Developed an eight-class skin lesion classification framework using Rotation and SimCLR self-supervised learning, feature fusion, and ensemble strategies. Evaluated class-balanced performance and cross-dataset generalization on ISIC 2019 and PAD-UFES-20.",keywords:["Self-Supervised Learning","Computer Vision","Medical AI","Ensemble Learning"]},{type:"Ongoing Research Project",title:"CogniDrive: Multimodal Machine Learning Framework for Driver Cognitive Readiness Assessment in Conditionally Automated Vehicles",description:"Developing a machine learning framework to assess driver readiness during automated vehicle takeover using driving behaviour and physiological signals. Exploring reaction time, steering variation, speed changes, and heart-rate-related metrics with Random Forest, XGBoost, and LSTM models for safe human–machine interaction.",keywords:["Autonomous Vehicles","Human-Machine Interaction","LSTM","Multimodal Learning"]},{type:"Submitted Conference Work",title:"A Quantitative Explainable AI Framework for Maternal Health Risk Prediction",description:"Developed an explainable machine learning framework for maternal health risk prediction using SHAP-based explainability and quantitative reliability analysis with reinforcement learning-based adaptive decision support across pregnancy stages.",keywords:["Explainable AI","Healthcare AI","SHAP","Reinforcement Learning"]},{type:"Ongoing Personal Robotics Project",title:"SPIDERONE X1: Spider-Inspired Compact Aerial Robot",description:"Developing a compact aerial robotic platform exploring ESP32-based embedded control, IMU and sensor integration, motor control, lightweight mechanical design, stabilization, and future autonomous operation.",keywords:["Robotics","Embedded Systems","Autonomous Systems","Sensor Fusion"]},{type:"Ongoing Research",title:"Emotion-Aware Adaptive Response Selection for Healthcare Companion Systems",description:"Exploring deep learning and reinforcement learning approaches for adaptive response selection in healthcare companion systems, focusing on facial emotion recognition, patient-support decision-making, feedback-based reward design, and future human-centered robotic integration.",keywords:["Deep Learning","Reinforcement Learning","Emotion Recognition","Human-Centered AI"]}],y6=()=>{const[n,i]=A.useState(null);return b.jsxs("section",{id:"research",className:`\r
+`})})]})})}),m6=["Artificial Intelligence","Machine Learning","Deep Learning","Computer Vision","Large Language Models","Human-Centered AI","Reinforcement Learning","Robotics","Autonomous Systems","Healthcare AI"],p6=[{title:"WaveGuard: A Flood Monitoring and Rescue System",authors:"A. N. Likhan, A. Roy, M. S. Salim, S. I. Hossain",venue:"SoftwareX (Elsevier), Vol. 32, 2025, Article 102361",status:"Published",description:"An AI-powered flood monitoring and rescue coordination system integrating natural language processing, geospatial analytics, and intelligent decision support for efficient disaster response.",doi:"DOI: 10.1016/j.softx.2025.102361"},{title:"A YOLO–TrOCR Pipeline with Dictionary Refinement for Handwritten Medicine Name Extraction",authors:"A. Roy, D. Saha, S. Debnath",venue:"1st International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure (PECCII), IEEE, 2026",status:"Accepted & Presented",description:"A document intelligence framework combining YOLO-based region detection, TrOCR-based text recognition, and dictionary refinement for accurate handwritten medicine name extraction.",doi:"DOI: 10.1109/PECCII70991.2026.11662060"}],g6=[{type:"Undergraduate Thesis",title:"A Self-Supervised Feature Fusion and Ensemble Framework for Skin Lesion Classification",description:"Developed an eight-class skin lesion classification framework using Rotation and SimCLR self-supervised learning, feature fusion, and ensemble strategies. Evaluated class-balanced performance and cross-dataset generalization on ISIC 2019 and PAD-UFES-20.",keywords:["Self-Supervised Learning","Computer Vision","Medical AI","Ensemble Learning"]},{type:"Submitted Conference Work",title:"A Quantitative Explainable AI Framework for Maternal Health Risk Prediction",description:"Developed an explainable machine learning framework for maternal health risk prediction using SHAP-based explainability and quantitative reliability analysis with reinforcement learning-based adaptive decision support across pregnancy stages.",keywords:["Explainable AI","Healthcare AI","SHAP","Reinforcement Learning"]},{type:"Ongoing Personal Robotics Project",title:"SPIDERONE X1: Spider-Inspired Compact Aerial Robot",description:"Developing a compact aerial robotic platform exploring ESP32-based embedded control, IMU and sensor integration, motor control, lightweight mechanical design, stabilization, and future autonomous operation.",keywords:["Robotics","Embedded Systems","Autonomous Systems","Sensor Fusion"]},{type:"Ongoing Research",title:"Emotion-Aware Adaptive Response Selection for Healthcare Companion Systems",description:"Exploring deep learning and reinforcement learning approaches for adaptive response selection in healthcare companion systems, focusing on facial emotion recognition, patient-support decision-making, feedback-based reward design, and future human-centered robotic integration.",keywords:["Deep Learning","Reinforcement Learning","Emotion Recognition","Human-Centered AI"]},{type:"Ongoing Research Project",title:"CogniDrive: Multimodal Machine Learning Framework for Driver Cognitive Readiness Assessment in Conditionally Automated Vehicles",description:"Developing a machine learning framework to assess driver readiness during automated vehicle takeover using driving behaviour and physiological signals. Exploring reaction time, steering variation, speed changes, and heart-rate-related metrics with Random Forest, XGBoost, and LSTM models for safe human–machine interaction.",keywords:["Autonomous Vehicles","Human-Machine Interaction","LSTM","Multimodal Learning"]}],y6=()=>{const[n,i]=A.useState(null);return b.jsxs("section",{id:"research",className:`\r
+scroll-mt-24\r
 py-20\r
 md:py-24\r
 px-5\r
@@ -1257,9 +1232,9 @@ border\r
 border-slate-700\r
 `,onClick:l=>l.stopPropagation(),children:[b.jsx("img",{src:n.image,alt:n.title,className:`\r
 w-full\r
-h-52\r
-sm:h-72\r
-object-cover\r
+max-h-[500px]\r
+object-contain\r
+bg-slate-950\r
 `}),b.jsxs("div",{className:`\r
 p-6\r
 md:p-8\r
